@@ -41,9 +41,14 @@ export default function Sponsors() {
                 </div>
 
                 <div className="text-center mt-6">
-                    <button className="px-5 py-1.5 text-sm font-medium text-blue-600 border border-blue-500 rounded-full hover:bg-blue-50 transition-colors duration-300">
+                    <a
+                        href="https://calendly.com/justine-joliveau/30min"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block px-5 py-1.5 text-sm font-medium text-blue-600 border border-blue-500 rounded-full hover:bg-blue-50 transition-colors duration-300"
+                    >
                         Devenir sponsor
-                    </button>
+                    </a>
                 </div>
             </div>
 

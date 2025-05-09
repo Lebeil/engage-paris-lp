@@ -1,3 +1,5 @@
+"use client";
+
 export default function EventDescription() {
     return (
         <section className="py-16 bg-black">
@@ -59,7 +61,7 @@ export default function EventDescription() {
                 </div>
             </div>
 
-            <style global>{`
+            <style jsx global>{`
                 @keyframes pulse-subtle {
                     0%, 100% { opacity: 0.05; }
                     50% { opacity: 0.15; }

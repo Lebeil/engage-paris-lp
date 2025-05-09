@@ -35,7 +35,7 @@ export default function Header() {
           <Link href="#faq" className="hover:text-secondary">
             FAQ
           </Link>
-          <Link href="#register" className="btn btn-primary ml-4">
+          <Link href="https://www.engage.paris/registration/676ab84b9b2a8f025d9f474d?force_new_registration=true" className="btn btn-primary ml-4">
             Billetterie complet 2025
           </Link>
         </nav>
@@ -88,7 +88,7 @@ export default function Header() {
               FAQ
             </Link>
             <Link
-              href="#register"
+              href="https://www.engage.paris/registration/676ab84b9b2a8f025d9f474d?force_new_registration=true"
               className="btn btn-primary mx-4 mt-4"
               onClick={() => setMobileMenuOpen(false)}
             >

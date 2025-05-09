@@ -22,7 +22,7 @@ const faqItems: FAQItem[] = [
         answer: "Oui, toutes les conférences seront enregistrées et mises à disposition des participants après l'événement. Vous recevrez un lien d'accès par email pour accéder aux rediffusions et aux supports de présentation des intervenants."
     },
     {
-        question: "Et si jj'aimerais être intervenant ?",
+        question: "Et si j'aimerais être intervenant ?",
         answer: "Nous sommes toujours à la recherche de speakers talentueux pour partager leur expertise. Si vous souhaitez proposer une intervention, utilisez le formulaire 'Je propose ma candidature' sur notre site. Notre comité de programmation examinera toutes les propositions et vous contactera pour la suite du processus."
     },
     {

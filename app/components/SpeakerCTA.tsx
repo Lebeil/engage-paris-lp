@@ -12,7 +12,7 @@ export default function SpeakerCTA() {
                     <p className="mb-8 text-lg opacity-90">
                         Vous avez une expertise à partager et l&apos;envie d&apos;inspirer ? Faites-vous entendre sur notre scène.
                     </p>
-                    <Link href="#proposer-conference" className="btn bg-white text-primary hover:bg-opacity-90">
+                    <Link href="https://calendly.com/justine-joliveau/30min" className="btn bg-white text-primary hover:bg-opacity-90">
                         Je propose ma candidature
                     </Link>
                 </div>

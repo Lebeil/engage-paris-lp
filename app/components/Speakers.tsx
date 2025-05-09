@@ -80,7 +80,7 @@ export default function Speakers() {
 
                 <div className="text-center">
                     <a
-                        href="#tous-les-speakers"
+                        href="https://www.engage.paris/conferenciers"
                         className="inline-flex items-center justify-center gap-2 bg-white text-black font-bold py-3 px-8 rounded-md hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
                         aria-label="Voir tous les speakers"
                     >

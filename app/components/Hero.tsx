@@ -27,7 +27,7 @@ export default function Hero() {
                             </div>
                             <div>
                                 <Link
-                                    href="#register"
+                                    href="/googlesheet"
                                     className="inline-block bg-white text-black font-bold py-3 px-12 text-lg"
                                 >
                                     REJOINDRE LA LISTE D&apos;ATTENTE

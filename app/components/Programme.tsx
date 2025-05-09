@@ -42,61 +42,68 @@ export default function Programme() {
         }
     ];
 
+    // Fonction pour déterminer la classe de la catégorie
+    const getCategoryClass = (category: string): string => {
+        if (category.includes('LEADER')) return 'bg-amber-100 text-amber-800';
+        if (category.includes('CSM')) return 'bg-purple-100 text-purple-800';
+        return 'bg-blue-100 text-blue-800';
+    };
+
     return (
         <section className="py-16 bg-white" id="programme">
             <div className="container">
-                <h2 className="section-title text-center mb-12">
-                    Programme 2026
+                <h2 className="section-title text-center mb-12 text-black">
+                    Extrait du programme 2025
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-                    {sessions.map((session) => (
-                        <div
-                            key={session.id}
-                            className="bg-white border border-gray-200 rounded-lg shadow-sm p-6"
-                        >
-                            <div className="flex items-start gap-2 mb-4">
-                                <div className="flex-shrink-0">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                    </svg>
+                    {sessions.map((session) => {
+                        const categoryClass = getCategoryClass(session.category);
+
+                        return (
+                            <a
+                                href="https://www.engage.paris/programme"
+                                key={session.id}
+                                className="bg-white border border-gray-200 rounded-lg shadow-sm p-6 block hover:shadow-md transition-shadow duration-300 cursor-pointer"
+                            >
+                                <div className="flex items-start gap-2 mb-4">
+                                    <div className="flex-shrink-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                        </svg>
+                                    </div>
+                                    <p className="text-sm text-gray-700 font-medium">{session.date}</p>
+                                    <div className="flex-shrink-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </svg>
+                                    </div>
+                                    <p className="text-sm text-gray-700 font-medium">{session.time}</p>
                                 </div>
-                                <p className="text-sm text-gray-700 font-medium">{session.date}</p>
-                                <div className="flex-shrink-0">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
+
+                                <h3 className="text-xl font-bold text-blue-800 mb-3">{session.title}</h3>
+
+                                <div className="flex flex-wrap gap-2 mb-4">
+                                    <span className="inline-block bg-gray-200 px-3 py-1 text-sm rounded-md">
+                                        {session.type}
+                                    </span>
+                                    <span className={`inline-block px-3 py-1 text-sm rounded-md ${categoryClass}`}>
+                                        {session.category}
+                                    </span>
                                 </div>
-                                <p className="text-sm text-gray-700 font-medium">{session.time}</p>
-                            </div>
 
-                            <h3 className="text-xl font-bold text-blue-800 mb-3">{session.title}</h3>
-
-                            <div className="flex flex-wrap gap-2 mb-4">
-                                <span className="inline-block bg-gray-200 px-3 py-1 text-sm rounded-md">
-                                    {session.type}
-                                </span>
-                                <span className={`inline-block px-3 py-1 text-sm rounded-md ${session.category.includes('LEADER')
-                                    ? 'bg-amber-100 text-amber-800'
-                                    : session.category.includes('CSM')
-                                        ? 'bg-purple-100 text-purple-800'
-                                        : 'bg-blue-100 text-blue-800'
-                                    }`}>
-                                    {session.category}
-                                </span>
-                            </div>
-
-                            <p className="text-gray-700">{session.description}</p>
-                        </div>
-                    ))}
+                                <p className="text-gray-700">{session.description}</p>
+                            </a>
+                        );
+                    })}
                 </div>
 
                 <div className="text-center mt-12">
                     <a
-                        href="#programme-complet"
+                        href="https://calendly.com/justine-joliveau/30min"
                         className="inline-flex items-center bg-blue-800 text-white font-semibold py-3 px-8 rounded-md hover:bg-blue-900 transition-colors"
                     >
-                        Voir le programme complet
+                        Voir le programme complet en 2026
                         <ChevronRightIcon className="h-5 w-5 ml-2" />
                     </a>
                 </div>
