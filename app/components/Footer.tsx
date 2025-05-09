@@ -77,8 +77,8 @@ export default function Footer() {
                 <div className="border-t border-gray-700 mt-8 pt-8 text-sm text-center md:text-left md:flex justify-between items-center">
                     <p>&copy; {new Date().getFullYear()} Engage Paris. Tous droits réservés.</p>
                     <div className="mt-4 md:mt-0">
-                        <Link href="/mentions-legales" className="hover:text-secondary mr-4">Mentions légales</Link>
-                        <Link href="/confidentialite" className="hover:text-secondary">Politique de confidentialité</Link>
+                        <Link href="https://www.engage.paris/" className="hover:text-secondary mr-4">Mentions légales</Link>
+                        <Link href="https://www.engage.paris/" className="hover:text-secondary">Politique de confidentialité</Link>
                     </div>
                 </div>
             </div>

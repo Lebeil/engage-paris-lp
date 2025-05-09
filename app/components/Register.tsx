@@ -194,7 +194,7 @@ export default function Register() {
                                     />
                                     <span className="text-sm">
                                         J&apos;accepte de recevoir des communications concernant l&apos;événement et je comprends que mes données seront traitées conformément à la{" "}
-                                        <a href="/confidentialite" className="text-primary underline hover:text-secondary">
+                                        <a href="https://www.engage.paris/" className="text-primary underline hover:text-secondary">
                                             politique de confidentialité
                                         </a>.
                                     </span>
