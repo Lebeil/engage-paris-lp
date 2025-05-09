@@ -1,0 +1,28 @@
+/* Police Muli */
+
+@font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 300;
+    /* Light */
+    src: url('/fonts/muli/7Au_p_0qiz-adYnjOCX2zw.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 400;
+    /* Regular */
+    src: url('/fonts/muli/7Au_p_0qiz-adYnjOCr2zw.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 700;
+    /* Bold */
+    src: url('/fonts/muli/7AuJH_0qiz-afTfMLJfJ.woff2') format('woff2');
+    font-display: swap;
+}
