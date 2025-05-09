@@ -1,12 +1,21 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Register() {
     // Utilisation des variables d'environnement avec Next.js
     const sheetId = process.env.NEXT_PUBLIC_SHEET_ID;
     // URL du service web déployé avec l'ID correct
     const scriptUrl = `https://script.google.com/macros/s/${process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_ID}/exec`;
+
+    // Afficher les variables d'environnement pour le débogage (uniquement en développement)
+    useEffect(() => {
+        if (process.env.NODE_ENV === 'development') {
+            console.log('Variables d\'environnement chargées:');
+            console.log('SHEET_ID:', process.env.NEXT_PUBLIC_SHEET_ID);
+            console.log('SCRIPT_URL:', scriptUrl);
+        }
+    }, [scriptUrl]);
 
     const [formData, setFormData] = useState({
         name: "",
