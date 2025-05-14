@@ -90,8 +90,8 @@ export default function Register() {
         <section className="py-16 bg-primary text-white" id="register">
             <div className="container">
                 <div className="max-w-3xl mx-auto text-center">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                        S&apos;inscrire à l&apos;événement
+                    <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
+                        Restons en contact
                     </h2>
                     <p className="mb-8 text-lg opacity-90">
                         Rejoignez l&apos;événement Customer Success de l&apos;année et connectez-vous avec des professionnels partageant les mêmes intérêts.

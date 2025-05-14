@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <header className="bg-black text-white py-4">
       <div className="container flex justify-between items-center">
-        <Link href="/" className="flex items-center">
+        <Link href="https://engage-paris.vercel.app/" className="flex items-center">
           <Image
             src="/images/logo.png"
             alt="Engage Paris"
